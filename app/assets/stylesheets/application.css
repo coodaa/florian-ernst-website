@@ -13,7 +13,53 @@
  *= require_tree .
  *= require_self
  */
- h1, p {
+ h1, h3, p {
    font-family: 'Space Mono', monospace;
-   color: #174aff;
+   color: #fffe9a;
     }
+
+ p, h5, h4  {
+font-family: 'Space Mono', monospace;
+color: #174aff;
+  }
+
+.container {
+  border: 3px;
+}
+
+.square
+{
+  height: 300px;
+  width: 300px;
+  background-color: #174aff;
+  position: relative;
+  float: right;
+
+}
+
+.small_square
+{
+  height: 300px;
+  width: 300px;
+  position: relative;
+  float: right;
+}
+
+.left_small_square
+{
+  height: 300px;
+  width: 300px;
+  position: relative;
+  float: left;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 40px;
+  color: #174aff;
+}
