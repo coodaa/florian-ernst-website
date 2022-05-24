@@ -1,61 +1,94 @@
-
- h1, h3, p {
-   font-family: 'Space Mono', monospace;
-   color: #fffe9a;
-    }
-
- p, h5, h6 {
-font-family: 'Space Mono', monospace;
-color: #174aff;
-  }
-
-.container {
-  border: 50px;
+* {
+  font-family: 'Space Mono', monospace;
+  scroll-behavior: smooth;
 }
 
-.container1 {
+div {
+  border: 0.3px solid red;
+}
+
+h1,
+h3 {
+  color: #fffe9a;
+}
+
+a {  border: 2px solid #174aff;
+}
+
+p,
+h2,
+h4,
+h5,
+h6 {
+  color: #174aff;
+}
+
+.containerr {
 	display: flex;
 	justify-content: space-between;
 }
 
-.item-0 {
-	flex-grow: 0;
-	flex-shrink: 0;
-	align-self: flex-start;
+.navigation {
+  position: absolute;
+  top: 50px;
 }
 
-.square {
+.logo-small {
+  height: 150px;
+  width: 150px;
+  text-align: start;
+  float: left;
+}
+
+.logo-gross {
   height: 350px;
   width: 350px;
   background-color: #174aff;
   float: right;
-  right:100px;
-  text-align: center;
+  text-align: start;
+  padding: 50px
+}
+/*
+.flexbox-start {
+  display: flex;
+  justify-content: space-between;
   position: absolute;
-  top: 40%;
+  top: 500px;
+} */
+
+.flexbox-with-border {
+  border-top: 6px solid #174aff;
 }
 
-
-h4 {
-  font-family: 'Space Mono', monospace;
-  color: #174aff;
-  font-weight: bold;
-    }
-
-
-
-
-
-.small_square {
-  height: 300px;
+.item-0 {
+  height: 150px;
   width: 300px;
   position: relative;
   float: right;
 }
 
-.left_small_square {
-  height: 300px;
+.item-1 {
+  height: 150px;
   width: 300px;
   position: relative;
   float: left;
+}
+
+.item-2 {
+  height: 350px;
+  width: 350px;
+  position: relative;
+  float: right;
+}
+
+.item-3 {
+  height: 350px;
+  width: 350px;
+  position: relative;
+  float: left;
+}
+
+#offer,
+#angebot,
+#about {
 }
