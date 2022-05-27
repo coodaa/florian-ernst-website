@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
 body {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, p, {
+h1, h2, h3, h4, h5, p {
   font-family: 'Space Mono', monospace;
   font-weight: normal;
 }
 
-
+/*
 .boldtest {
   font-weight: bold !important;
-}
+} */
 
 /*
 div {
@@ -24,7 +24,14 @@ h3 {
   color: #fffe9a;
 }
 
-a {  border: 2px solid #174aff;
+a {
+  border-right: 2px solid #174aff;
+  border-spacing: 5px;
+  margin: 5px;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 p,
@@ -53,13 +60,14 @@ h6 {
 }
 
 .logo-gross {
-  height: 40vh;
-  width: 40vh;
-  /* background-color: #174aff; */
+  height: 50vh;
+  width: 50vh;
+  background-color: #174aff;
   float: right;
-  text-align: start;
+  text-align: left;
   padding: 50px
-}
+  /* text-align: left; */
+  }
 /*
 .flexbox-start {
   display: flex;
@@ -100,14 +108,10 @@ h6 {
   float: left;
 }
 
-#offer,
-#angebot,
-#about {
-}
+.btn {
+  /* color: #174aff !important; */
+  background-color: black;
+  color: white;
+  margin: 4vh;
 
-
-@include media-breakpoint-up(sm) {
-  .logo-gross {
-    background: red !important;
-  }
 }
