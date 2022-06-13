@@ -1,23 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
 
-body {
+* {
   scroll-behavior: smooth;
+  font-family: 'Raleway', sans-serif;
 }
 
-h1, h2, h3, h4, h5, p {
-  font-family: 'Space Mono', monospace;
+h1, h3, h4, h5, p, a {
+  font-family:'Raleway', sans-serif;;
   font-weight: normal;
 }
-
-/*
-.boldtest {
-  font-weight: bold !important;
-} */
-
-/*
-div {
-  border: 0.3px solid red;
-} */
 
 h1,
 h3 {
@@ -42,23 +33,6 @@ h6 {
   color: #174aff;
 }
 
-.containerr {
-	display: flex;
-	justify-content: space-between;
-}
-
-.navigation {
-  position: absolute;
-  top: 50px;
-}
-
-.logo-small {
-  height: 150px;
-  width: 150px;
-  text-align: start;
-  float: left;
-}
-
 .logo-gross {
   height: 50vh;
   width: 50vh;
@@ -66,52 +40,113 @@ h6 {
   float: right;
   text-align: left;
   padding: 50px
-  /* text-align: left; */
   }
-/*
-.flexbox-start {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 500px;
-} */
 
-.flexbox-with-border {
-  border-top: 6px solid #174aff;
+
+
+
+/* Logo ausblenden */
+@media screen and (max-width: 600px) {
+  .logo-gross, .btn {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
 }
 
-.item-0 {
-  height: 150px;
-  width: 300px;
-  position: relative;
-  float: right;
-}
 
-.item-1 {
-  height: 150px;
-  width: 300px;
-  position: relative;
-  float: left;
+/* MOBILE FIRST DESIGN */
+.header {
+  margin-bottom: 2em;
 }
-
-.item-2 {
-  height: 311px;
-  width: 350px;
-  position: relative;
-  float: right;
+.navi ul {
+  list-style: none;
+  padding: 0;
 }
-
-.item-3 {
-  height: 350px;
-  width: 350px;
-  position: relative;
-  float: left;
+.navi a {
+  display: block;
+  padding: .4em;
+  background-color: #174aff;
+  color:#fffe9a;
 }
+#logo-ernst {
+  font-size: .48em;
+  margin-top: -9px;
+  color:#174aff
+  }
 
 .btn {
-  /* color: #174aff !important; */
-  background-color: black;
-  color: white;
-  margin: 4vh;
+  color: #fffe9a;
+  background-color: #174aff;
+  font-family:'Raleway', sans-serif;
+  width: 29vh;
+  padding: 2vh;
+  text-align: center;
+}
+
+
+/* Ansicht für Tablets */
+@media screen and (min-width:38.75em) {
+  .header {
+    float: left;
+    width: 100%;
+  }
+  .logo {
+    float: left;
+  }
+  .navi {
+    float: right;
+    margin-right: 1em;
+  }
+  .navi li {
+    float: left;
+  }
+  .navi a {
+    display: block;
+    color: #174aff;
+    padding: .5em;
+    background-color: white;
+  }
+  #logo-ernst {
+    font-size: .48em;
+    margin-top: -9px;
+    color:#174aff
+    }
+}
+
+
+/* Ansicht für Desktop-Monitore */
+@media screen and (min-width:45em) {
+  .container {
+    background: white;
+    max-width: 960px;
+    margin: 2em auto;
+  }
+  .content {
+    width: 62%;
+    float: left;
+  }
+  .sidebar {
+    width: 34%;
+    float: right;
+  }
+
+  .navi a {
+  background-color: white;
+  }
+
+.logo-bold {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  }
+
+#logo-ernst {
+  font-size: .48em;
+  margin-top: -9px;
+  color:#174aff
+  }
 
 }
