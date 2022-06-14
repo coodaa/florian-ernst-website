@@ -15,11 +15,6 @@ h3 {
   color: #fffe9a;
 }
 
-a {
-  border-right: 2px solid #174aff;
-  border-spacing: 5px;
-  margin: 5px;
-}
 
 a:link {
   text-decoration: none;
@@ -37,13 +32,31 @@ h6 {
   background-color: #174aff;
   width: 250px;
   height: 250px;
+
   }
 
 .text {
-  text-align: left;
-  display: grid;
-  justify-content: center;
-  }
+text-align: left;
+display: grid;
+justify-content: center;
+}
+
+.border-right  {
+  border-right: 2px solid #174aff;
+  border-spacing: 5px;
+  margin: 5px;
+}
+
+.border-none  {
+  border-spacing: 5px;
+  margin: 5px;
+}
+
+.border-around {
+border: 2px solid #174aff;
+border-spacing: 5px;
+margin: 5px;
+}
 
 /* Logo ausblenden */
 @media screen and (max-width: 600px) {
@@ -151,7 +164,7 @@ h6 {
   font-size: .48em;
   margin-top: -9px;
   color:#174aff;
-  width: 50%;
+  /* width: 50%; */
   float: right;
   }
 
