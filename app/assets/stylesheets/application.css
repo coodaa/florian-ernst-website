@@ -49,6 +49,32 @@
   margin-top: 30px
 }
 
+.werbetext {
+  font-size: 1.5em;
+  margin: 25px;
+  width: 900px;
+  height: 100px;
+  position: relative;
+  margin-bottom: 30vh;
+}
+
+.child {
+  width: 750px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.item-left-pic {
+  float: left;
+  width: 30%;
+}
+
+#text-margin {
+  margin-top: 5em;
+}
 
 /* Ansicht für Tablets */
 @media screen and (min-width:38.75em) {
