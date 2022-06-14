@@ -5,72 +5,6 @@
   font-family: 'Raleway', sans-serif;
 }
 
-h1, h3, h4, h5, p, a {
-  font-family:'Raleway', sans-serif;;
-  font-weight: normal;
-}
-
-h1,
-h3 {
-  color: #fffe9a;
-}
-
-
-a:link {
-  text-decoration: none;
-}
-
-p,
-h2,
-h4,
-h5,
-h6 {
-  color: #174aff;
-}
-
-.logo-gross {
-  background-color: #174aff;
-  width: 250px;
-  height: 250px;
-
-  }
-
-.text {
-text-align: left;
-display: grid;
-justify-content: center;
-}
-
-.border-right  {
-  border-right: 2px solid #174aff;
-  border-spacing: 5px;
-  margin: 5px;
-}
-
-.border-none  {
-  border-spacing: 5px;
-  margin: 5px;
-}
-
-.border-around {
-border: 2px solid #174aff;
-border-spacing: 5px;
-margin: 5px;
-}
-
-/* Logo ausblenden */
-@media screen and (max-width: 600px) {
-  .logo-gross, .btn {
-    visibility: hidden;
-    clear: both;
-    float: left;
-    margin: 10px auto 5px 20px;
-    width: 28%;
-    display: none;
-  }
-}
-
-
 /* MOBILE FIRST DESIGN */
 .header {
   margin-bottom: 2em;
@@ -86,10 +20,15 @@ margin: 5px;
   color:#fffe9a;
 }
 #logo-ernst {
-  font-size: .48em;
+  font-size: 1em;
   margin-top: -9px;
   color:#174aff
   }
+
+#logo-florian {
+  font-size: 1.4em;
+  color:#174aff
+}
 
 .btn {
   color: #fffe9a;
@@ -104,6 +43,11 @@ margin: 5px;
   border-top: 4px solid #174aff;
 }
 
+.with-border-margin {
+  border-top: 4px solid #174aff;
+  position: relative;
+  margin-top: 30px
+}
 
 
 /* Ansicht für Tablets */
@@ -132,7 +76,23 @@ margin: 5px;
     font-size: .48em;
     margin-top: -9px;
     color:#174aff
-    }
+  }
+  .header-for-content {
+    float: left;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 10em;
+  }
+
+  .item-left {
+    float: left;
+  }
+  .content-right {
+    width: 30%;
+    float: right;
+  }
 }
 
 
@@ -161,13 +121,82 @@ margin: 5px;
   }
 
 #logo-ernst {
-  font-size: .48em;
-  margin-top: -9px;
+  font-size: .7em;
   color:#174aff;
-  /* width: 50%; */
   float: right;
   }
+}
 
 
+h1, h3, h4, h5, p, a {
+  font-family:'Raleway', sans-serif;;
+  font-weight: normal;
+}
 
+h1,
+h3 {
+  color: #fffe9a;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+p,
+h2,
+h4,
+h5,
+h6 {
+  color: #174aff;
+}
+
+.logo-gross {
+  background-color: #174aff;
+  width: 250px;
+  height: 250px;
+
+  }
+
+.text {
+  text-align: left;
+  display: grid;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+#text-up {
+  margin-top: -10px;
+}
+
+.border-right  {
+  border-right: 2px solid #174aff;
+  border-spacing: 5px;
+  margin: 5px;
+}
+
+.border-none  {
+  border-spacing: 5px;
+  margin: 5px;
+}
+
+.border-around {
+border: 2px solid #174aff;
+border-spacing: 5px;
+margin: 5px;
+}
+
+#angebot {
+  margin-left: 43%;
+}
+
+/* Logo ausblenden */
+@media screen and (max-width: 600px) {
+  .logo-gross, .btn {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
 }
