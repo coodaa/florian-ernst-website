@@ -34,16 +34,16 @@ h6 {
 }
 
 .logo-gross {
-  height: 50vh;
-  width: 50vh;
   background-color: #174aff;
-  float: right;
-  text-align: left;
-  padding: 50px
+  width: 250px;
+  height: 250px;
   }
 
-
-
+.text {
+  text-align: left;
+  display: grid;
+  justify-content: center;
+  }
 
 /* Logo ausblenden */
 @media screen and (max-width: 600px) {
@@ -82,10 +82,15 @@ h6 {
   color: #fffe9a;
   background-color: #174aff;
   font-family:'Raleway', sans-serif;
-  width: 29vh;
+  width: 150px;
   padding: 2vh;
   text-align: center;
 }
+
+.with-border {
+  border-top: 4px solid #174aff;
+}
+
 
 
 /* Ansicht für Tablets */
@@ -130,7 +135,6 @@ h6 {
     float: left;
   }
   .sidebar {
-    width: 34%;
     float: right;
   }
 
@@ -146,7 +150,11 @@ h6 {
 #logo-ernst {
   font-size: .48em;
   margin-top: -9px;
-  color:#174aff
+  color:#174aff;
+  width: 50%;
+  float: right;
   }
+
+
 
 }
