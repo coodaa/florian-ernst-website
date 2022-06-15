@@ -5,6 +5,10 @@
   font-family: 'Raleway', sans-serif;
 }
 
+body {
+  hyphens: auto;
+ }
+
 /* MOBILE FIRST DESIGN */
 .header {
   margin-bottom: 2em;
@@ -40,7 +44,7 @@
 }
 
 .with-border {
-  border-top: 4px solid #174aff;
+  border-top: 3px solid #174aff;
 }
 
 .with-border-margin {
@@ -81,6 +85,35 @@
   width: 35%;
 }
 
+.button {
+  color: red;
+}
+
+body {
+  display: grid;
+  grid-template-columns: auto 0px;
+}
+
+.top {
+  --offset: 50px;
+  position: sticky;
+  bottom: 20px;
+  margin-left: 58.5em;
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+
+  /* visual styling */
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  color: #fffe9a;
+  background: #174aff;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+
+
 /* Ansicht für Tablets */
 @media screen and (min-width:38.75em) {
   .header {
@@ -119,10 +152,13 @@
 
   .item-left {
     float: left;
+    margin-left: 2em;
+
   }
   .content-right {
     width: 30%;
     float: right;
+    margin-right: 2em;
   }
 
   .werbetext {
