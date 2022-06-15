@@ -112,7 +112,10 @@ body {
   white-space: nowrap;
 }
 
-
+#profil-jpg {
+  width: 26em;
+  margin-left: -8em;
+}
 
 /* Ansicht für Tablets */
 @media screen and (min-width:38.75em) {
@@ -167,6 +170,24 @@ body {
     text-align: center;
   }
 
+  .footer {
+    float: left;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 10em;
+    margin-top: 30em
+  }
+
+  .content-video {
+    width: 30%;
+    float: right;
+    margin-right: 20em;
+  }
+
+  .item-video {
+  float: left;
 }
 
 
@@ -226,10 +247,16 @@ h6 {
 
 .logo-gross {
   background-color: #174aff;
-  width: 250px;
-  height: 250px;
-
+    width: 300px;
+    height: 300px;
+    margin-right: 6em;
+    margin-bottom: 4em;
   }
+
+.beste {
+  margin-left: 6em;
+  margin-top: 3em;
+}
 
 .text {
   text-align: left;
