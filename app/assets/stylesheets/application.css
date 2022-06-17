@@ -117,6 +117,20 @@ body {
   margin-left: -8em;
 }
 
+.content-video {
+  width: 20%;
+  float: right;
+  margin-right: 2em;
+}
+
+
+
+
+
+
+
+
+
 /* Ansicht für Tablets */
 @media screen and (min-width:38.75em) {
   .header {
@@ -176,18 +190,25 @@ body {
     justify-content: space-between;
     align-items: center;
     display: flex;
-    height: 10em;
-    margin-top: 30em
+    height: 19em;
+    margin-top: 30em;
+    background-color: #174aff;
+    color: #fffe9a;
   }
 
   .content-video {
-    width: 30%;
+    width: 53%;
     float: right;
-    margin-right: 20em;
+    margin-right: 2em;
   }
 
   .item-video {
   float: left;
+  }
+
+  .item-footer {
+    color: #fffe9a;
+  }
 }
 
 
