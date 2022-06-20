@@ -98,7 +98,7 @@ body {
   --offset: 50px;
   position: sticky;
   bottom: 20px;
-  margin-left: 58.5em;
+  margin-left: 66.5em;
   place-self: end;
   margin-top: calc(100vh + var(--offset));
 
@@ -115,6 +115,8 @@ body {
 #profil-jpg {
   width: 26em;
   margin-left: -8em;
+  box-shadow: 18px -29px #174aff;
+  /* /* box-shadow: 10px 20px 15px silver */
 }
 
 .content-video {
@@ -178,9 +180,10 @@ body {
     margin-right: 2em;
   }
 
+
   .werbetext {
     margin: 3em;
-    margin-bottom: 9em;
+    margin-bottom: 13em;
     text-align: center;
   }
 
@@ -197,9 +200,9 @@ body {
   }
 
   .content-video {
-    width: 53%;
+    width: 77%;
     float: right;
-    margin-right: 2em;
+    margin-right: 0em
   }
 
   .item-video {
@@ -241,12 +244,19 @@ body {
   color:#174aff;
   float: right;
   }
+  a:link {
+    color:inherit;
+ }
 }
 
 
 h1, h3, h4, h5, p, a {
   font-family:'Raleway', sans-serif;;
   font-weight: normal;
+}
+
+h2 {
+  font-size: 3em;
 }
 
 h1,
@@ -268,8 +278,8 @@ h6 {
 
 .logo-gross {
   background-color: #174aff;
-    width: 300px;
-    height: 300px;
+    width: 330px;
+    height: 330px;
     margin-right: 6em;
     margin-bottom: 4em;
   }

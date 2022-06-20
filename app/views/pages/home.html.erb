@@ -7,9 +7,14 @@
 
     <nav class="navi">
       <ul>
-        <li class="border-right"><a href="#angebot">Angebot</a></li>
-        <li class="border-none"><a href="#übermich">Über mich</a></li>
-        <li class="border-around"><a href="#erstgespräch">Erstgespräch</a></li>
+        <li><a href="#top"></a></li>
+        <li class="border-right"><%= link_to "Angebot", "#angebot" %> </li>
+        <li class="border-right"><%= link_to "Über mich", "#übermich" %> </li>
+        <li class="border-around"><%= link_to "Erstgespräch", "#erstgespräch" %> </li>
+
+        <%# <li class="border-right"><a href="#angebot">Angebot</a></li> %>
+        <%# <li class="border-none"><a href="#übermich">Über mich</a></li> %>
+        <%# <li class="border-around"><a href="#erstgespräch">Erstgespräch</a></li> %>
       </ul>
     </nav>
   </div>
@@ -34,7 +39,7 @@
     </div>
   </div>
 
-  <h4 id="angebot"><b>Angebot</b></h4>
+  <h4 id="angebot"> <%= link_to "Angebot", "#top" %>  </h4>
 
   <div class="header-for-content with-border">
     <div class="item-left">
@@ -72,7 +77,7 @@
     </div>
 
     <div class="content-right">
-      <p>(Unternehmens-) Kultur ist ein dynamischer Prozess der keinen Stillstand kennt. Was braucht es um alte Strukturen aufzubrechen und neue Impulse aufzunehmen, die eine Team- und Unternehmenskultur zu mehr Effizienz, Produktivität und Zufriedenheit fürht?</p>
+      <p>(Unternehmens-) Kultur ist ein dynamischer Prozess der keinen Stillstand kennt. Was braucht es um alte Strukturen aufzubrechen und neue Impulse aufzunehmen, die eine Team- und Unternehmenskultur zu mehr Effizienz, Produktivität und Zufriedenheit führt?</p>
     </div>
   </div>
 
@@ -93,21 +98,23 @@
 
     <div class="header-for-content">
       <div class="item-left-pic">
-        <h4>Würden Sie gerne mehr erfahren?</h4>
-        <div class="border-blue">
+        <h4 id="erstgespräch">Würden Sie gerne mehr erfahren?</h4>
+        <div class="border-blue" id="übermich">
           <p>Erstgespräch</p>
           <p>1 Std.</p>
         </div>
-        <p id="text-margin"><b> Ich bin da, um mit meiner Strategie, Ihre Teams und damit auch Ihr Unternehmen fit für die neue Arbeitswelt zu machen.</b></p>
-        <p>Mein Name ist Florian Ernst, ich verknüpfe die Themen New Work, Kulturwandel und Personalbindung zu einem Netz, welche bestehenden Mitarbeiter:innen am Unternehmen bindet und potenzielle Mitarbeiter anzieht. <br> <br> Dabei lege ich meinen Fokus ganz auf die Teamkultur, welche ich durch Workshops und Coachings mit den einzelnen Teammitgliedern, als auch mit den Teamleads Stärke und Festigkeit verleihe.</p>
+        <p id="text-margin"><b> Ich bin da, um mit meiner Strategie, Ihre Teams und damit auch Ihr Unternehmen auf die neuen Arbeitswelten vorzubereiten.</b></p>
+        <p>Mein Name ist Florian Penis, ich verknüpfe die Themen New Work, Kulturwandel und Personalbindung zu einem Netz, welche bestehenden Mitarbeiter:innen am Unternehmen bindet und potenzielle Mitarbeiter anzieht. <br> <br> Dabei lege ich meinen Fokus ganz auf die Teamkultur, welche ich durch Workshops und Coachings mit den einzelnen Teammitgliedern, als auch mit den Teamleads Stärke und Festigkeit verleihe.</p>
       </div>
 
       <div class="content-right">
-        <%= image_tag 'profil.jpg', alt: 'Florian Ernst', id: 'profil-jpg' %>
+        <%= image_tag 'profilh.jpg', alt: 'Florian Ernst', id: 'profil-jpg' %>
       </div>
 
     </div>
   </div>
+
+<%# <iframe src="https://koalendar.com/e/erstgesprach-koayvDmC?embed=true" width="100%" height="800px" frameborder="0"></iframe> %>
 
   <div class="footer">
 
