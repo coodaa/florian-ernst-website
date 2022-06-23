@@ -10,7 +10,8 @@
         <li><a href="#top"></a></li>
         <li class="border-right"><%= link_to "Angebot", "#angebot" %> </li>
         <li class="border-right"><%= link_to "Über mich", "#übermich" %> </li>
-        <li class="border-around"><%= link_to "Erstgespräch", "#erstgespräch" %> </li>
+        <li class="border-around"><%= link_to "Erstgespräch", erstgespraech_index_path %> </li>
+
 
         <%# <li class="border-right"><a href="#angebot">Angebot</a></li> %>
         <%# <li class="border-none"><a href="#übermich">Über mich</a></li> %>
@@ -30,12 +31,14 @@
 
       <h2>Holen Sie <br> das Beste aus <br> Ihren Teams <br></h2>
 
-      <div class="btn btn-one">
-        <span>ERSTGESPRÄCH</span>
-        <%# <%= link_to render(:partial => 'partials/calendar') %>
-        <%# <button type="button">Click Me!</button> %>
 
-      </div>
+      <%= link_to erstgespraech_index_path do %>
+        <div class="btn">
+          <button class="fill">ERSTGESPRÄCH</button>
+        </div>
+        <% end %>
+
+
     </div>
   </div>
 
@@ -104,7 +107,7 @@
           <p>1 Std.</p>
         </div>
         <p id="text-margin"><b> Ich bin da, um mit meiner Strategie, Ihre Teams und damit auch Ihr Unternehmen auf die neuen Arbeitswelten vorzubereiten.</b></p>
-        <p>Mein Name ist Florian Penis, ich verknüpfe die Themen New Work, Kulturwandel und Personalbindung zu einem Netz, welche bestehenden Mitarbeiter:innen am Unternehmen bindet und potenzielle Mitarbeiter anzieht. <br> <br> Dabei lege ich meinen Fokus ganz auf die Teamkultur, welche ich durch Workshops und Coachings mit den einzelnen Teammitgliedern, als auch mit den Teamleads Stärke und Festigkeit verleihe.</p>
+        <p>Mein Name ist Florian Ernst, ich verknüpfe die Themen New Work, Kulturwandel und Personalbindung zu einem Netz, welche bestehenden Mitarbeiter:innen am Unternehmen bindet und potenzielle Mitarbeiter anzieht. <br> <br> Dabei lege ich meinen Fokus ganz auf die Teamkultur, welche ich durch Workshops und Coachings mit den einzelnen Teammitgliedern, als auch mit den Teamleads Stärke und Festigkeit verleihe.</p>
       </div>
 
       <div class="content-right">

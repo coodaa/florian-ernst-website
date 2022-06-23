@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+@import "erstgespraech";
 
 * {
   scroll-behavior: smooth;
@@ -32,15 +33,6 @@ body {
 #logo-florian {
   font-size: 1.4em;
   color:#174aff
-}
-
-.btn {
-  color: #fffe9a;
-  background-color: #174aff;
-  font-family:'Raleway', sans-serif;
-  width: 150px;
-  padding: 2vh;
-  text-align: center;
 }
 
 .with-border {
@@ -85,9 +77,6 @@ body {
   width: 35%;
 }
 
-.button {
-  color: red;
-}
 
 body {
   display: grid;
@@ -218,7 +207,7 @@ body {
 /* Ansicht für Desktop-Monitore */
 @media screen and (min-width:45em) {
   .container {
-    background: white;
+    /* background: white; */
     max-width: 960px;
     margin: 2em auto;
   }
@@ -247,6 +236,7 @@ body {
   a:link {
     color:inherit;
  }
+
 }
 
 
@@ -321,14 +311,35 @@ margin: 5px;
   margin-left: 43%;
 }
 
-/* Logo ausblenden */
-/* @media screen and (max-width: 600px) { */
-  /* .logo-gross, .btn {
-    visibility: hidden;
-    clear: both;
-    float: left;
-    margin: 10px auto 5px 20px;
-    width: 28%;
-    display: none;
-  }
-} */
+
+
+.fill {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  color: #174aff;
+  outline: 0;
+  border: 1px solid #174aff;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.fill::after {
+  content: "";
+  background-color: #fffe9a;
+  color: #fffe9a;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: -7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.fill:hover::after {
+  top: 0px;
+  left: 0px;
+}

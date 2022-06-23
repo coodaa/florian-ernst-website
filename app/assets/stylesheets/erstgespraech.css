@@ -1,0 +1,63 @@
+.containerr {
+  /* background: white; */
+  /* max-width: 960px; */
+  /* margin: 2em auto; */
+  position: relative;
+  /* box-shadow: 18px -29px #174aff !important; */
+
+}
+
+.slide {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 30px 13px;
+  outline: 0;
+  border: 1px solid #174aff;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  width: 8em;
+  position: relative;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  margin-top: -1em;
+  color: #174aff
+
+}
+
+.slide i {
+  opacity: 0;
+  font-size: 13px;
+  transition: 0.2s;
+  position: absolute;
+  right: 10px;
+  top: 21px;
+  transition: transform 1;
+}
+
+.slide div {
+  transition: transform 0.8s;
+}
+
+.slide:hover div {
+  transform: translateX(-6px);
+}
+
+.slide::after {
+  content: "";
+  /* background-color: #fffe9a; */
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: -7px;
+  left: 7px;
+  color: #174aff
+}
+
+.slide:hover i {
+  opacity: 1;
+  transform: translateX(-6px);
+}
+/* End of Slide Button  */
