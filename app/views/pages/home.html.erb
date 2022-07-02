@@ -7,15 +7,10 @@
 
     <nav class="navi">
       <ul>
-        <li><a href="#top"></a></li>
-        <li class="border-none"><%= link_to "Angebot", "#angebot" %> </li>
+        <%# <li><a href="#top"></a></li> %>
+        <li class="border-none" onclick="smoothScroll(document.getElementById('second'))">Angebot</li>
         <li class="border-none"><%= link_to "Über mich", "#übermich" %> </li>
         <li class="border-around"><%= link_to "Erstgespräch", erstgespraech_index_path %> </li>
-
-
-        <%# <li class="border-right"><a href="#angebot">Angebot</a></li> %>
-        <%# <li class="border-none"><a href="#übermich">Über mich</a></li> %>
-        <%# <li class="border-around"><a href="#erstgespräch">Erstgespräch</a></li> %>
       </ul>
     </nav>
   </div>
@@ -41,8 +36,8 @@
     </div>
   </div>
 
-
-  <h4 class="angebot angebot-bold">  <%= link_to "Angebot", "#top" %>  </h4>
+  <div class="second angebot angebot-bold" id="second"> <h4> Angebot </h4>
+  </div>
 
   <div class="header-for-content with-border">
     <div class="item-left">
@@ -126,6 +121,7 @@
 
 <%# <iframe src="https://koalendar.com/e/erstgesprach-koayvDmC?embed=true" width="100%" height="800px" frameborder="0"></iframe> %>
 <%# user test %>
+
 
   <div class="footer">
 
