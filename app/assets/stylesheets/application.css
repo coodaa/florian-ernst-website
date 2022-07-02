@@ -26,7 +26,7 @@ body {
 }
 #logo-ernst {
   font-size: 1em;
-  margin-top: -9px;
+  margin-top: -16px;
   color:#174aff
   }
 
@@ -146,7 +146,7 @@ body {
   }
   #logo-ernst {
     font-size: .48em;
-    margin-top: -9px;
+    margin-top: -16px;
     color:#174aff
   }
   .header-for-content {
@@ -291,12 +291,12 @@ h6 {
   margin-top: -10px;
 }
 
-.border-right  {
-  border-right: 2px solid #174aff;
-  border-spacing: 5px;
-  margin: 5px;
+/* .border-right  {
+  /* border-right: 2px solid #174aff; */
+  /* border-spacing: 5px; */
+  /* margin: 5px; */
   /* margin-left: 10px; */
-}
+/* } */
 
 .border-none  {
   border-spacing: 5px;
@@ -315,18 +315,19 @@ margin: 5px;
   margin-right: 5px;
 }
 
-.angebot-bold, #top {
-  font-weight: bold !important;
+.angebot-bold, #top, .top {
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .fill {
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 27px;
+  font-weight: bold;
   letter-spacing: 1px;
   padding: 13px 50px 13px;
   color: #174aff;
   outline: 0;
-  border: 1px solid #174aff;
+  border: 3px solid #174aff;
   cursor: pointer;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
