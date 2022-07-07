@@ -311,13 +311,9 @@ margin: 5px;
 }
 
 .angebot {
+  font-size: 25px;
   margin-left: 43%;
   margin-right: 5px;
-}
-
-.angebot-bold, #top, .top {
-  font-weight: bold;
-  font-size: 25px;
 }
 
 .fill {
