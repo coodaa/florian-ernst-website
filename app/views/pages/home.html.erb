@@ -7,8 +7,6 @@
 
     <nav class="navi">
       <ul>
-        <%# <a href="#angebot" data-controller="scroll-to">#angebote</a> %>
-
         <li class="border-none"><%= link_to "Angebot", "#angebot" %> </li>
         <li class="border-none"><%= link_to "Über mich", "#übermich" %> </li>
         <li class="border-around"><%= link_to "Erstgespräch", erstgespraech_index_path %> </li>
@@ -94,7 +92,9 @@
     <div class="werbetext">
       <p><b> Ich habe ein Workshop-Programm entwickelt das speziell dazu da ist, Teamleads, in den sich schnell entwickelenden Zeiten, auf die modernen Anforderungen der neuen Arbeitswelt vorzubereiten.</b></p>
     </div>
+  </div>
 
+  <div class="header">
     <div class="header-for-content">
       <div class="item-left-pic">
         <h4 id="erstgespräch"><b>Würden Sie gerne mehr erfahren?</b></h4>
@@ -119,16 +119,18 @@
     </div>
   </div>
 
-  <div class="footer">
-    <div class="item-footer">
-      <h4 class="item-footer"><b>Lassen Sie uns <br> zusammen arbeiten</h4>
-      <p class="item-footer">Mobil | +49 173 83 11 4 33 <br>
-      E-Mail | florian@ernst-rethink.de <br>
-      Adresse | <br>
-      Landsberger Straße 37 <br>
-      04157 Leipzig</p>
+  <div class="header">
+    <div class="footer">
+      <div class="item-footer">
+        <h4 class="item-footer"><b>Lassen Sie uns <br> zusammen arbeiten</h4>
+        <p class="item-footer">Mobil | +49 173 83 11 4 33 <br>
+        E-Mail | florian@ernst-rethink.de <br>
+        Adresse | <br>
+        Landsberger Straße 37 <br>
+        04157 Leipzig</p>
+      </div>
+      <%= video_tag "video.mp4", autoplay: :autoplay, loop: :loop, muted: :muted, class: "content-video" %>
     </div>
-    <%= video_tag "video.mp4", autoplay: :autoplay, loop: :loop, muted: :muted, class: "content-video" %>
+    <a href="#" class="top">Start &#8593;</a>
   </div>
-  <a href="#" class="top">Start &#8593;</a>
 </div>

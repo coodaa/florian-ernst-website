@@ -4,11 +4,15 @@
 * {
   scroll-behavior: smooth;
   font-family: 'Raleway', sans-serif;
+  text-decoration: none;
 }
 
 body {
+  -webkit-hyphens: auto;
   hyphens: auto;
- }
+  display: grid;
+  grid-template-columns: auto 0px;
+}
 
 /* MOBILE FIRST DESIGN */
 .header {
@@ -81,20 +85,14 @@ body {
   width: 35%;
 }
 
-
-body {
-  display: grid;
-  grid-template-columns: auto 0px;
-}
-
 .top {
   --offset: 50px;
+  position: -webkit-sticky;
   position: sticky;
   bottom: 20px;
   margin-left: 66.5em;
   place-self: end;
   margin-top: calc(100vh + var(--offset));
-
   /* visual styling */
   text-decoration: none;
   padding: 10px;
@@ -119,131 +117,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-/* Ansicht für Tablets */
-@media screen and (min-width:38.75em) {
-  .header {
-    float: left;
-    width: 100%;
-  }
-  .logo {
-    float: left;
-  }
-  .navi {
-    float: right;
-    margin-right: 1em;
-  }
-  .navi li {
-    float: left;
-  }
-  .navi a {
-    display: block;
-    color: #174aff;
-    padding: .5em;
-    background-color: white;
-  }
-  #logo-ernst {
-    font-size: .48em;
-    margin-top: -16px;
-    color:#174aff
-  }
-  .header-for-content {
-    float: left;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    height: 10em;
-  }
-
-  .item-left {
-    float: left;
-    margin-left: 2em;
-
-  }
-  .content-right {
-    width: 30%;
-    float: right;
-    margin-right: 2em;
-  }
-
-
-  .werbetext {
-    margin: 3em;
-    margin-bottom: 13em;
-    text-align: center;
-  }
-
-  .footer {
-    float: left;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    height: 19em;
-    margin-top: 30em;
-    background-color: #174aff;
-    color: #fffe9a;
-  }
-
-  .content-video {
-    width: 77%;
-    float: right;
-    margin-right: 0em
-  }
-
-  .item-video {
-  float: left;
-  }
-
-  .item-footer {
-    color: #fffe9a;
-  }
-}
-
-
-/* Ansicht für Desktop-Monitore */
-@media screen and (min-width:45em) {
-  .container {
-    /* background: white; */
-    max-width: 960px;
-    margin: 2em auto;
-  }
-  .content {
-    width: 62%;
-    float: left;
-  }
-  .sidebar {
-    float: right;
-  }
-
-  .navi a {
-  background-color: white;
-  }
-
-.logo-bold {
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-  }
-
-#logo-ernst {
-  font-size: .7em;
-  color:#174aff;
-  float: right;
-  }
-  a:link {
-    color:inherit;
- }
-
-}
-
-
 h1, h3, h4, h5, p, a {
   font-family:'Raleway', sans-serif;;
   font-weight: normal;
@@ -258,9 +131,9 @@ h3 {
   color: #fffe9a;
 }
 
-a:link {
+/* a:link {
   text-decoration: none;
-}
+} */
 
 p,
 h2,
@@ -349,4 +222,118 @@ margin: 5px;
 .fill:hover::after {
   top: 0px;
   left: 0px;
+}
+
+/* Ansicht für Tablets */
+@media screen and (min-width:38.75em) {
+  .header {
+    float: left;
+    width: 100%;
+  }
+  .logo {
+    float: left;
+  }
+  .navi {
+    float: right;
+    margin-right: 1em;
+  }
+  .navi li {
+    float: left;
+  }
+  .navi a {
+    display: block;
+    color: #174aff;
+    padding: .5em;
+    background-color: white;
+  }
+  #logo-ernst {
+    font-size: .48em;
+    margin-top: -16px;
+    color:#174aff
+  }
+  .header-for-content {
+    float: left;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 10em;
+  }
+
+  .item-left {
+    float: left;
+    margin-left: 2em;
+
+  }
+  .content-right {
+    width: 30%;
+    float: right;
+    margin-right: 2em;
+  }
+
+  .werbetext {
+    margin: 3em;
+    margin-bottom: 13em;
+    text-align: center;
+  }
+
+  .footer {
+    float: left;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 19em;
+    margin-top: 30em;
+    background-color: #174aff;
+    color: #fffe9a;
+  }
+
+  .content-video {
+    width: 77%;
+    float: right;
+    margin-right: 0em
+  }
+
+  .item-video {
+  float: left;
+  }
+
+  .item-footer {
+    color: #fffe9a;
+  }
+}
+
+/* Ansicht für Desktop-Monitore */
+@media screen and (min-width:45em) {
+  .container {
+    /* background: white; */
+    max-width: 960px;
+    margin: 2em auto;
+  }
+  .content {
+    width: 62%;
+    float: left;
+  }
+  .sidebar {
+    float: right;
+  }
+
+  .navi a {
+  background-color: white;
+  }
+
+.logo-bold {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  }
+
+#logo-ernst {
+  font-size: .7em;
+  color:#174aff;
+  float: right;
+  }
+  /* a:link {
+    color:inherit;
+ } */
 }
