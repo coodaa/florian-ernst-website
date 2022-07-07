@@ -55,12 +55,15 @@ body {
   text-align: left;
 }
 
+#erstgespräch {
+  font-size: 1.3em;
+}
+
 .border-blue {
   border-top: 4px solid #174aff;
   border-bottom: 4px solid #174aff;
   position: relative;
   margin-top: 30px
-
 }
 
 .item-left-pic {
@@ -69,7 +72,8 @@ body {
 }
 
 #text-margin {
-  margin-top: 5em;
+  margin-top: 2em;
+  font-size: 1.3em;
 }
 
 .item-left-center {
