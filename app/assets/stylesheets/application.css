@@ -107,7 +107,6 @@ body {
   width: 26em;
   margin-left: -8em;
   box-shadow: 18px -29px #174aff;
-  /* /* box-shadow: 10px 20px 15px silver */
 }
 
 .content-video {
@@ -131,9 +130,6 @@ h3 {
   color: #fffe9a;
 }
 
-/* a:link {
-  text-decoration: none;
-} */
 
 p,
 h2,
@@ -167,13 +163,6 @@ h6 {
 #text-up {
   margin-top: -10px;
 }
-
-/* .border-right  {
-  /* border-right: 2px solid #174aff; */
-  /* border-spacing: 5px; */
-  /* margin: 5px; */
-  /* margin-left: 10px; */
-/* } */
 
 .border-none  {
   border-spacing: 5px;

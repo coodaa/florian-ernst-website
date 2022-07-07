@@ -1,5 +1,10 @@
 {
   "dependencies": {
-    "stimulus-scroll-to": "^4.0.0"
+    "@hotwired/stimulus": "^3.0.1",
+    "@hotwired/stimulus-webpack-helpers": "^1.0.1",
+    "stimulus-scroll-to": "^4.0.0",
+    "watch": "^1.0.2",
+    "yarn-build": "^0.9.0",
+    "private": "true"
   }
 }
