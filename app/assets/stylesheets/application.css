@@ -213,6 +213,36 @@ margin: 5px;
   left: 0px;
 }
 
+
+.footer {
+  float: left;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 1em;
+  margin-top: 30em;
+  background-color: #174aff;
+  color: #fffe9a;
+}
+
+.content-video {
+  width: 77%;
+  float: right;
+  margin-right: 0em
+}
+
+.item-video {
+float: left;
+}
+
+.item-footer {
+  color: #fffe9a;
+}
+
+
+
+
 /* Ansicht für Tablets */
 @media screen and (min-width:38.75em) {
   .header {
@@ -266,31 +296,6 @@ margin: 5px;
     text-align: center;
   }
 
-  .footer {
-    float: left;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    height: 19em;
-    margin-top: 30em;
-    background-color: #174aff;
-    color: #fffe9a;
-  }
-
-  .content-video {
-    width: 77%;
-    float: right;
-    margin-right: 0em
-  }
-
-  .item-video {
-  float: left;
-  }
-
-  .item-footer {
-    color: #fffe9a;
-  }
 }
 
 /* Ansicht für Desktop-Monitore */
@@ -322,7 +327,5 @@ margin: 5px;
   color:#174aff;
   float: right;
   }
-  /* a:link {
-    color:inherit;
- } */
+ 
 }
