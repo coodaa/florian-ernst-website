@@ -112,25 +112,32 @@
         <p>Mein Name ist Florian Ernst, ich verknüpfe die Themen New Work, Kulturwandel und Personalbindung zu einem Netz, welche bestehenden Mitarbeiter:innen am Unternehmen bindet und potenzielle Mitarbeiter anzieht. <br> <br> Dabei lege ich meinen Fokus ganz auf die Teamkultur, welche ich durch Workshops und Coachings mit den einzelnen Teammitgliedern, als auch mit den Teamleads Stärke und Festigkeit verleihe.</p>
       </div>
 
-      <div class="content-right">
+      <div class="pic-right">
         <%= image_tag 'profilh.jpg', alt: 'Florian Ernst', id: 'profil-jpg' %>
       </div>
 
     </div>
   </div>
 
-  <div class="header">
-    <div class="footer">
-      <div class="item-footer">
-        <h4 class="item-footer"><b>Lassen Sie uns <br> zusammen arbeiten</h4>
-        <p class="item-footer">Mobil | +49 173 83 11 4 33 <br>
-        E-Mail | florian@ernst-rethink.de <br>
-        Adresse | <br>
-        Landsberger Straße 37 <br>
-        04157 Leipzig</p>
+  <div class="footer">
+    <div class="item-footer">
+      <h4 class="item-footer"><b>Lassen Sie uns <br> zusammen arbeiten</h4>
+      <p class="item-footer">
+      Florian Ernst <br><br>
+
+      Landsberger Straße 37 <br>
+      04157 Leipzig <br><br>
+      <div class="social-icons">
+        <%= image_tag "phone.png", height: 35%>+49 173 83 11 4 33 <br>
+        <%= image_tag "mail.png", height: 35%><%= mail_to "florian@ernst-rethink.de", 'florian@ernst-rethink.de'%><br>
+        <a target="_blank" href="https://www.linkedin.com/in/ernst-florian/"><%= image_tag "linked.png", height: 35%></a>/ernst-florian</p>
       </div>
-      <%= video_tag "video.mp4", autoplay: :autoplay, loop: :loop, muted: :muted, class: "content-video" %>
+
     </div>
+
+    <%= video_tag "video.mp4", autoplay: :autoplay, loop: :loop, muted: :muted, class: "content-video" %>
+
   </div>
-    <a href="#" class="top">Start &#8593;</a>
+
+  <a href="#" class="top">Start &#8593;</a>
 </div>
