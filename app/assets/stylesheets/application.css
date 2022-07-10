@@ -54,7 +54,8 @@ body {
   margin: 1.2em;
   width: 20;
   height: 6em;
-  position: relative;
+  /* position: relative; */
+  display: flex;
   margin-bottom: 9em;
   text-align: left;
 }
@@ -71,8 +72,10 @@ body {
 }
 
 .item-left-pic {
-  float: left;
-  width: 30%;
+  /* display: flex; */
+
+  /* float: left; */
+  width: 40%;
 }
 
 #text-margin {
@@ -107,7 +110,8 @@ body {
   width: 26em;
   margin-left: -8em;
   box-shadow: 18px -29px #174aff;
-  /* /* box-shadow: 10px 20px 15px silver */
+  /* max-width: 100%; */
+  /* height: auto; */
 }
 
 .content-video {
@@ -219,32 +223,37 @@ margin: 5px;
 
 
 .footer {
-  float: left;
+  margin-top: 15em;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   display: flex;
   padding: 1em;
-  margin-top: 30em;
   background-color: #174aff;
   color: #fffe9a;
-}
+  float: left;
+  }
 
 .content-video {
-  width: 77%;
-  float: right;
-  margin-right: 0em
-}
-
-.item-video {
-float: left;
+  width: 50%;
+  /* float: right; */
+  /* margin-right: 0em */
 }
 
 .item-footer {
   color: #fffe9a;
+  width: 20em;
 }
 
+.social-icons {
+  vertical-align:middle;
+}
 
+#tex {
+  color: #fffe9a;
+  width: 20em;
+  vertical-align:middle;
+}
 
 
 /* Ansicht für Tablets */
@@ -289,9 +298,12 @@ float: left;
 
   }
   .content-right {
-    width: 30%;
-    float: right;
+    width: 40%;
     margin-right: 2em;
+  }
+
+  .pic-right {
+    width: 30%;
   }
 
   .werbetext {
@@ -305,7 +317,6 @@ float: left;
 /* Ansicht für Desktop-Monitore */
 @media screen and (min-width:45em) {
   .container {
-    /* background: white; */
     max-width: 960px;
     margin: 2em auto;
   }
@@ -331,5 +342,4 @@ float: left;
   color:#174aff;
   float: right;
   }
- 
 }
