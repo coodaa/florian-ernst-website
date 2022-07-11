@@ -75,7 +75,7 @@ body {
   /* display: flex; */
 
   /* float: left; */
-  width: 40%;
+  width: 44%;
 }
 
 #text-margin {
@@ -108,7 +108,7 @@ body {
 
 #profil-jpg {
   width: 26em;
-  margin-left: -8em;
+  /* margin-left: -8em; */
   box-shadow: 15px -20px #174aff;
 }
 
@@ -230,6 +230,7 @@ margin: 5px;
 .item-footer {
   color: #fffe9a;
   width: 20em;
+  margin-top: -1em;
 }
 
 .item-footer-bold {
@@ -253,6 +254,7 @@ margin: 5px;
 
 .teext {
   font-weight: lighter;
+  color: #fffe9a;
 }
 
 #impressum {
@@ -267,6 +269,7 @@ margin: 5px;
   .header {
     float: left;
     width: 100%;
+    padding: 2em;
   }
   .logo {
     float: left;
@@ -293,9 +296,10 @@ margin: 5px;
     float: left;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
     display: flex;
+    align-items: center;
     height: 10em;
+    /* padding: 2em; */
   }
 
   .item-left {
@@ -309,7 +313,7 @@ margin: 5px;
   }
 
   .pic-right {
-    width: 30%;
+    width: 50%;
   }
 
   .werbetext {
