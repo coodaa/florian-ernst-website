@@ -109,17 +109,12 @@ body {
 #profil-jpg {
   width: 26em;
   margin-left: -8em;
-  box-shadow: 18px -29px #174aff;
-  /* max-width: 100%; */
-  /* height: auto; */
+  box-shadow: 15px -20px #174aff;
 }
 
 .content-video {
   width: 20%;
-  /* float: right; */
-  margin-right: 2em;
 }
-
 
 h1, h3, h4, h5, p, a {
   font-family:'Raleway', sans-serif;;
@@ -220,22 +215,16 @@ margin: 5px;
 
 .footer {
   margin-top: 15em;
-  /* width: 100%; */
   display: flex;
-
   justify-content: space-between;
-  /* align-items: center; */
-  /* justify-content: space-between; */
-  padding: 1em;
+  padding: 2em;
   background-color: #174aff;
   color: #fffe9a;
   float: left;
   }
 
 .content-video {
-  width: 60%;
-  float: right;
-  /* margin-right: 0em */
+  width: 100%;
 }
 
 .item-footer {
@@ -243,20 +232,33 @@ margin: 5px;
   width: 20em;
 }
 
+.item-footer-bold {
+  color: #fffe9a;
+  width: 25em;
+}
+
 .social-icons {
   display: flex;
   align-items: center;
-  padding-bottom: .5em;
+  padding-bottom: .3em;
 }
 
 .soc {
   height: 2.2em;
   width: 2.2em;
   color: #fffe9a;
-  font-weight: normal;
+  font-weight: lighter;
   padding-right: .5em;
 }
 
+.teext {
+  font-weight: lighter;
+}
+
+#impressum {
+  color:#fffe9a;
+  font-size: .8em;
+}
 
 
 
@@ -348,8 +350,6 @@ margin: 5px;
   }
 
   .top {
-    margin-left: 66.5em;
+    margin-left: 63em;
   }
-
-
 }
