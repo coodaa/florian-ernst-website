@@ -110,11 +110,8 @@ body {
   width: 26em;
   margin-left: -8em;
   box-shadow: 18px -29px #174aff;
-<<<<<<< HEAD
-=======
   /* max-width: 100%; */
   /* height: auto; */
->>>>>>> 70b44643b4daf27f26f20ced7fe6d33f8b56c76c
 }
 
 .content-video {
@@ -221,7 +218,6 @@ margin: 5px;
   left: 0px;
 }
 
-
 .footer {
   margin-top: 15em;
   /* width: 100%; */
@@ -238,7 +234,7 @@ margin: 5px;
 
 .content-video {
   width: 60%;
-  /* float: right; */
+  float: right;
   /* margin-right: 0em */
 }
 
@@ -248,9 +244,18 @@ margin: 5px;
 }
 
 .social-icons {
+  display: flex;
+  align-items: center;
+  padding-bottom: .5em;
+}
 
-  }
-
+.soc {
+  height: 2.2em;
+  width: 2.2em;
+  color: #fffe9a;
+  font-weight: normal;
+  padding-right: .5em;
+}
 
 
 
@@ -345,4 +350,6 @@ margin: 5px;
   .top {
     margin-left: 66.5em;
   }
+
+
 }

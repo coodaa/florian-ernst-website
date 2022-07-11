@@ -126,12 +126,28 @@
       Florian Ernst <br><br>
 
       Landsberger Straße 37 <br>
-      04157 Leipzig <br><br>
+      04157 Leipzig <br>
+
       <div class="social-icons">
-        <%= image_tag "phone.png", height: 35%>+49 173 83 11 4 33 <br>
-        <%= image_tag "mail.png", height: 35%><%= mail_to "florian@ernst-rethink.de", 'florian@ernst-rethink.de'%><br>
-        <a target="_blank" href="https://www.linkedin.com/in/ernst-florian/"><%= image_tag "linked.png", height: 35%></a>/ernst-florian</p>
+        <%= image_tag "phone.png", :class => "soc"%>
+        <span class="teext">+49 173 83 11 4 33</span> <br>
       </div>
+
+      <div class="social-icons">
+        <%= image_tag "mail.png", :class => "soc"%><%= mail_to "florian@ernst-rethink.de", 'florian@ernst-rethink.de', :style=>'color: #fffe9a;'%><br>
+      </div>
+
+      <div class="social-icons">
+        <a target="_blank" href="https://www.linkedin.com/in/ernst-florian/"><%= image_tag "linked.png", :class => "soc"%></a>/ernst-florian</p>
+      </div>
+
+
+
+
+
+
+
+
 
     </div>
 
