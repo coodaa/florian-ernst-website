@@ -1,10 +1,5 @@
 .containerr {
-  /* background: white; */
-  /* max-width: 960px; */
-  /* margin: 2em auto; */
   position: relative;
-  /* box-shadow: 18px -29px #174aff !important; */
-
 }
 
 .slide {
@@ -23,7 +18,6 @@
   transform: translate(-50%, 50%);
   margin-top: -1em;
   color: #174aff
-
 }
 
 .slide i {
@@ -46,7 +40,6 @@
 
 .slide::after {
   content: "";
-  /* background-color: #fffe9a; */
   width: 100%;
   z-index: -1;
   position: absolute;
@@ -60,4 +53,3 @@
   opacity: 1;
   transform: translateX(-6px);
 }
-/* End of Slide Button  */

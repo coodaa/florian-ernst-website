@@ -5,6 +5,8 @@
   scroll-behavior: smooth;
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
+  width: device-width;
+  zoom: 1.0 ;
 }
 
 body {
@@ -15,6 +17,8 @@ body {
   -ms-hyphens: auto;
   display: grid;
   grid-template-columns: auto 0px;
+  width: 100%;
+
 }
 
 /* MOBILE FIRST DESIGN */
@@ -107,7 +111,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   bottom: 3.5rem;
-  margin-left: 27.5rem;
+  margin-left: 27.3rem;
   place-self: end;
   margin-top: calc(100vh + var(--offset));
   text-decoration: none;
@@ -284,9 +288,31 @@ h6 {
   margin-top: 2.1em;
 }
 
-
 /* Ansicht für Tablets */
-@media screen and (min-width: 821px) {
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+  .header-pad {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .item-footer {
+    color: #fffe9a;
+    margin-left: -22em;
+  }
+
+  .top {
+  --offset: 21em;
+  margin-left: 45em;
+  margin-top: calc(100vh + var(--offset));
+  padding: 15px;
+  }
+}
+
+
+/* Ansicht für Desktop-Monitore */
+@media screen and (min-width:900px)  {
   .container {
     max-width: 810px;
     margin: 2em auto;
@@ -368,10 +394,8 @@ h6 {
     border-radius: 100px;
     white-space: nowrap;
   }
-}
 
-/* Ansicht für Desktop-Monitore */
-@media screen and (min-width:45em) {
+
   .container {
     max-width: 960px;
     margin: 2em auto;
