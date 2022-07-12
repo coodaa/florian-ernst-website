@@ -15,23 +15,27 @@ body {
 }
 
 /* MOBILE FIRST DESIGN */
-.header {
+.header, .header2 {
   margin-bottom: 2em;
 }
+
 .navi ul {
   list-style: none;
   padding: 0;
 }
 .navi a {
   display: block;
-  padding: .4em;
+  padding: .6em;
   background-color: #174aff;
   color:#fffe9a;
+  font-size: large;
 }
+
 #logo-ernst {
-  font-size: 1em;
+  font-size: .7em;
   margin-top: -16px;
-  color:#174aff
+  color:#174aff;
+  margin-bottom: 3em;
   }
 
 #logo-florian {
@@ -53,11 +57,12 @@ body {
   font-size: 1.3em;
   margin: 1.2em;
   width: 20;
-  height: 6em;
+  /* height: 6em; */
   /* position: relative; */
   display: flex;
-  margin-bottom: 9em;
-  text-align: left;
+  margin-bottom: 4em;
+  margin-top: 4em;
+  text-align: center;
 }
 
 #erstgespräch {
@@ -71,12 +76,6 @@ body {
   margin-top: 30px
 }
 
-.item-left-pic {
-  /* display: flex; */
-
-  /* float: left; */
-  width: 44%;
-}
 
 #text-margin {
   margin-top: 2em;
@@ -180,6 +179,7 @@ margin: 5px;
   font-size: 25px;
   margin-left: 43%;
   margin-right: 5px;
+  font-weight: bold;
 }
 
 .fill {
@@ -250,6 +250,7 @@ margin: 5px;
   color: #fffe9a;
   font-weight: lighter;
   padding-right: .5em;
+  margin-left: -0.2em;
 }
 
 .teext {
@@ -257,9 +258,10 @@ margin: 5px;
   color: #fffe9a;
 }
 
-#impressum {
+.impressum {
   color:#fffe9a;
   font-size: .8em;
+  margin-top: 2.1em;
 }
 
 
@@ -271,6 +273,12 @@ margin: 5px;
     width: 100%;
     padding: 2em;
   }
+
+  .header2 {
+  display: flex;
+  width: 100%;
+  }
+
   .logo {
     float: left;
   }
@@ -322,6 +330,9 @@ margin: 5px;
     text-align: center;
   }
 
+  .item-left-pic {
+    width: 44%;
+  }
 }
 
 /* Ansicht für Desktop-Monitore */
