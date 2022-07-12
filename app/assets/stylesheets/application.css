@@ -23,10 +23,11 @@ body {
 /* MOBILE FIRST DESIGN */
 
 .container {
-  /* max-width: 400px; */
-  margin: 2em auto;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  max-width: 99%;
+  position: relative;
+  /* margin: 2em auto; */
+  /* margin-left: 1em; */
+  /* margin-right: 1em; */
 }
 
 .header, .header2 {
