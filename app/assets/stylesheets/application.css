@@ -5,7 +5,6 @@
   scroll-behavior: smooth;
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
-  zoom: 1.0 ;
 }
 
 body {
@@ -16,16 +15,13 @@ body {
   -ms-hyphens: auto;
   display: grid;
   grid-template-columns: auto 0px;
-  width: 100%;
-
 }
 
 /* MOBILE FIRST DESIGN */
-
 .container {
-  max-width: 99%;
+  max-width:516px;
   position: relative;
-  /* margin: 2em auto; */
+  margin: 2em auto;
   /* margin-left: 1em; */
   /* margin-right: 1em; */
 }
@@ -71,7 +67,7 @@ body {
 
 .with-border-margin {
   border-top: 4px solid #174aff;
-  position: relative;
+  /* position: relative; */
   margin-top: 30px
 }
 
@@ -296,6 +292,62 @@ h6 {
   margin-top: 2.1em;
 }
 
+
+/* erstgespräch */
+
+.slide {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 30px 13px;
+  outline: 0;
+  border: 1px solid #174aff;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  width: 8em;
+  position: relative;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  margin-top: -1em;
+  color: #174aff
+}
+
+.slide i {
+  opacity: 0;
+  font-size: 13px;
+  transition: 0.2s;
+  position: absolute;
+  right: 10px;
+  top: 21px;
+  transition: transform 1;
+}
+
+.slide div {
+  transition: transform 0.8s;
+}
+
+.slide:hover div {
+  transform: translateX(-6px);
+}
+
+.slide::after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: -7px;
+  left: 7px;
+  color: #174aff
+}
+
+.slide:hover i {
+  opacity: 1;
+  transform: translateX(-6px);
+}
+
+
 /* Ansicht für Tablets */
 @media screen and (min-width:768px) and (max-width:1024px) {
 
@@ -312,7 +364,7 @@ h6 {
 
   .item-footer {
     color: #fffe9a;
-    margin-left: -22em;
+    margin-left: -19em;
   }
 
   .top {
@@ -332,7 +384,6 @@ h6 {
   white-space: nowrap;
   }
 }
-
 
 /* Ansicht für Desktop-Monitore */
 @media screen and (min-width:900px)  {
