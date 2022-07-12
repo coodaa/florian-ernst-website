@@ -19,11 +19,9 @@ body {
 
 /* MOBILE FIRST DESIGN */
 .container {
-  max-width:516px;
+  max-width: 100%;
   position: relative;
   margin: 2em auto;
-  /* margin-left: 1em; */
-  /* margin-right: 1em; */
 }
 
 .header, .header2 {
@@ -49,14 +47,14 @@ body {
 }
 
 #logo-ernst {
-  font-size: .7em;
+  font-size: 1em;
   margin-top: -16px;
   color:#174aff;
   margin-bottom: 3em;
   }
 
 #logo-florian {
-  font-size: 1.4em;
+  font-size: 2em;
   color:#174aff
 }
 
@@ -67,7 +65,6 @@ body {
 
 .with-border-margin {
   border-top: 4px solid #174aff;
-  /* position: relative; */
   margin-top: 30px
 }
 
@@ -362,6 +359,9 @@ h6 {
     flex-direction: row;
   }
 
+  .sidebar {
+    float: right;
+  }
   .item-footer {
     color: #fffe9a;
     margin-left: -19em;
@@ -423,7 +423,7 @@ h6 {
     margin: 5px;
   }
   #logo-ernst {
-    font-size: .48em;
+    font-size: 1em;
     margin-top: -16px;
     color:#174aff
   }
@@ -489,7 +489,7 @@ h6 {
   font-weight: bold;
   }
   #logo-ernst {
-  font-size: .7em;
+  font-size: 1em;
   color:#174aff;
   float: right;
   }
