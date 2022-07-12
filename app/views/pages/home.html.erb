@@ -30,15 +30,15 @@
           <button class="fill">ERSTGESPRÄCH</button>
         </div>
       <% end %>
-
     </div>
+    <div id="angebot"></div>
   </div>
 
-  <div class="second angebot">
-    <h4> Angebot </h4>
+  <div>
+    <p class="angebot">Angebot</p>
   </div>
 
-  <div id="angebot" class="header-for-content with-border">
+  <div class="header-for-content with-border">
     <div class="item-left">
       <h4><b>New Work -</b><br> der Weg in eine <br>bessere Arbeitswelt</h4>
     </div>
@@ -98,7 +98,7 @@
     <div class="header-for-content">
       <div class="item-left-pic">
         <h4 id="erstgespräch"><b>Würden Sie gerne mehr erfahren?</b></h4>
-        <div class="border-blue" id="übermich">
+        <div class="border-blue">
           <p>Erstgespräch</p>
           <%= link_to erstgespraech_index_path do %>
         <div class="btn">
@@ -107,19 +107,21 @@
         <% end %>
           <p>30 min</p>
         </div>
-
-        <p id="text-margin"><b> Ich bin da, um mit meiner Strategie, Ihre Teams und damit auch Ihr Unternehmen auf die neuen Arbeitswelten vorzubereiten.</b></p>
-        <p>Mein Name ist Florian Ernst, ich verknüpfe die Themen New Work, Kulturwandel und Personalbindung zu einem Netz, welche bestehenden Mitarbeiter:innen am Unternehmen bindet und potenzielle Mitarbeiter anzieht. <br> <br> Dabei lege ich meinen Fokus ganz auf die Teamkultur, welche ich durch Workshops und Coachings mit den einzelnen Teammitgliedern, als auch mit den Teamleads Stärke und Festigkeit verleihe.</p>
+        <div id="übermich">
+          <p id="text-margin"><b> Ich bin da, um mit meiner Strategie, Ihre Teams und damit auch Ihr Unternehmen auf die neuen Arbeitswelten vorzubereiten.</b></p>
+          <p>Mein Name ist Florian Ernst, ich verknüpfe die Themen New Work, Kulturwandel und Personalbindung zu einem Netz, welche bestehenden Mitarbeiter:innen am Unternehmen bindet und potenzielle Mitarbeiter anzieht. <br> <br> Dabei lege ich meinen Fokus ganz auf die Teamkultur, welche ich durch Workshops und Coachings mit den einzelnen Teammitgliedern, als auch mit den Teamleads Stärke und Festigkeit verleihe.</p>
+        </div>
       </div>
 
       <div class="pic-right">
-        <%= image_tag 'profilh.jpg', alt: 'Florian Ernst', id: 'profil-jpg' %>
+        <%= image_tag 'profil.jpg', alt: 'Florian Ernst', id: 'profil-jpg' %>
       </div>
 
     </div>
   </div>
 
   <div class="footer">
+
     <div class="item-footer">
       <h4 class="item-footer-bold"><b>Lassen Sie uns <br> zusammen arbeiten</h4><br>
       <p class="item-footer">
@@ -149,8 +151,10 @@
 
     </div>
 
-    <%= video_tag "video.mp4", autoplay: :autoplay, loop: :loop, muted: :muted, class: "content-video" %>
-
+    <div class="footer-video">
+      <%= video_tag "video.mp4", autoplay: :autoplay, loop: :loop, muted: :muted, class: "content-video" %>
+    </div>
+    
   </div>
 
   <a href="#" class="top">Start &#8593;</a>

@@ -91,7 +91,7 @@ body {
   --offset: 21em;
   position: -webkit-sticky;
   position: sticky;
-  bottom: 3rem;
+  bottom: 3.5rem;
   margin-left: 27.5rem;
   place-self: end;
   margin-top: calc(100vh + var(--offset));
@@ -107,12 +107,8 @@ body {
 
 #profil-jpg {
   width: 26em;
-  /* margin-left: -8em; */
   box-shadow: 15px -20px #174aff;
-}
-
-.content-video {
-  width: 20%;
+  margin-top: 2em;
 }
 
 h1, h3, h4, h5, p, a {
@@ -176,10 +172,9 @@ margin: 5px;
 }
 
 .angebot {
-  font-size: 25px;
-  margin-left: 43%;
-  margin-right: 5px;
+  font-size: 27px;
   font-weight: bold;
+  text-align: center;
 }
 
 .fill {
@@ -233,6 +228,11 @@ margin: 5px;
   margin-top: -1em;
 }
 
+.footer-video {
+  display: flex;
+  justify-content: space-between;
+}
+
 .item-footer-bold {
   color: #fffe9a;
   width: 25em;
@@ -256,6 +256,7 @@ margin: 5px;
 .teext {
   font-weight: lighter;
   color: #fffe9a;
+  text-decoration: none;
 }
 
 .impressum {
@@ -268,6 +269,7 @@ margin: 5px;
 
 /* Ansicht für Tablets */
 @media screen and (min-width:38.75em) {
+
   .header {
     float: left;
     width: 100%;
@@ -277,6 +279,7 @@ margin: 5px;
   .header2 {
   display: flex;
   width: 100%;
+  margin-bottom: 0em;
   }
 
   .logo {
@@ -332,6 +335,10 @@ margin: 5px;
 
   .item-left-pic {
     width: 44%;
+  }
+
+  .top {
+  margin-left: 63rem;
   }
 }
 
