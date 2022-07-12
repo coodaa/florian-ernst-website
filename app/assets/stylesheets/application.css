@@ -5,7 +5,6 @@
   scroll-behavior: smooth;
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
-  width: device-width;
   zoom: 1.0 ;
 }
 
@@ -22,6 +21,14 @@ body {
 }
 
 /* MOBILE FIRST DESIGN */
+
+.container {
+  /* max-width: 400px; */
+  margin: 2em auto;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
 .header, .header2 {
   margin-bottom: 5em;
 }
@@ -291,6 +298,11 @@ h6 {
 /* Ansicht für Tablets */
 @media screen and (min-width:768px) and (max-width:1024px) {
 
+  .container {
+    max-width: 750px;
+    margin: 2em auto;
+  }
+
   .header-pad {
     display: flex;
     justify-content: center;
@@ -304,9 +316,19 @@ h6 {
 
   .top {
   --offset: 21em;
-  margin-left: 45em;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 3.5rem;
+  margin-left: 41.5rem;
+  place-self: end;
   margin-top: calc(100vh + var(--offset));
+  text-decoration: none;
   padding: 15px;
+  font-family: sans-serif;
+  color: #fffe9a;
+  background: #174aff;
+  border-radius: 100px;
+  white-space: nowrap;
   }
 }
 
