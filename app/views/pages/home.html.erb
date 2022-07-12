@@ -120,42 +120,52 @@
     </div>
   </div>
 
-  <div class="footer">
 
-    <div class="item-footer">
-      <h4 class="item-footer-bold"><b>Lassen Sie uns <br> zusammen arbeiten</h4><br>
-      <p class="item-footer">
-      Florian Ernst <br>
-      Landsberger Straße 37 <br>
-      04157 Leipzig <br>
+  <div class="footer-flex">
 
-      <div class="social-icons">
-        <%= image_tag "phone.png", :class => "soc"%>
-        <span class="teext"><a href="tel:+49 173 83 11 4 33" class="soc">+49 173 83 11 4 33</a></span> <br>
-      </div>
+    <div class="footer">
 
-      <div class="social-icons">
-        <%= image_tag "mail.png", :class => "soc"%><%= mail_to "florian@ernst-rethink.de", 'florian@ernst-rethink.de', :style=>'color: #fffe9a;'%><br>
-      </div>
+      <div class="item-footer">
 
-      <div class="social-icons">
-        <a target="_blank" href="https://www.linkedin.com/in/ernst-florian/"><%= image_tag "linked.png", :class => "soc"%></a><a href="https://www.linkedin.com/in/ernst-florian/" target="_blank" class="teext">/ernst-florian</a></p>
+        <h4 class="item-footer-bold"><b>Lassen Sie uns <br> zusammen arbeiten</h4><br>
+        <p class="item-footer">
+        Florian Ernst <br>
+        Landsberger Straße 37 <br>
+        04157 Leipzig <br>
 
+        <div>
+          <div class="social-icons">
+            <%= image_tag "phone.png", :class => "soc"%>
+            <span class="teext"><a href="tel:+49 173 83 11 4 33" class="soc">+49 173 83 11 4 33</a></span> <br>
+          </div>
 
-      </div>
+          <div class="social-icons">
+            <%= image_tag "mail.png", :class => "soc"%><%= mail_to "florian@ernst-rethink.de", 'florian@ernst-rethink.de', :style=>'color: #fffe9a;'%><br>
+          </div>
 
-      <div class="social-icons">
-      <%=link_to "Impressum", impressum_index_path(@impressum), :class => "impressum"%>
+          <div class="social-icons">
+            <a target="_blank" href="https://www.linkedin.com/in/ernst-florian/"><%= image_tag "linked.png", :class => "soc"%></a><a href="https://www.linkedin.com/in/ernst-florian/" target="_blank" class="teext">/ernst-florian</a></p>
+          </div>
+        </div>
 
+        <div class="social-icons">
+          <%=link_to "Impressum", impressum_index_path(@impressum), :class => "impressum"%>
+        </div>
       </div>
 
     </div>
 
-    <div class="footer-video">
+    <div class="content-center">
       <%= video_tag "video.mp4", autoplay: :autoplay, loop: :loop, muted: :muted, class: "content-video" %>
     </div>
 
   </div>
 
+
+
+
+
   <a href="#" class="top top1">Start &#8593;</a>
+
+
 </div>
